@@ -5,9 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+import android.widget.ImageView;
 
 
 /**
@@ -22,7 +20,8 @@ public class MainActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
-
+        ImageView imageView = root.findViewById(R.id.iv_rich);
+        imageView.setImageDrawable(getResources().getDrawable(R.drawable.rich));
         return root;
     }
 }

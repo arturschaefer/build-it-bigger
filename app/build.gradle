@@ -56,4 +56,5 @@ dependencies {
     implementation project(':jokesandroid')
     implementation project(':jokesJavaLib')
     endpointsServer project(path: ':backend', configuration: 'endpoints')
+    implementation 'junit:junit:4.12'
 }

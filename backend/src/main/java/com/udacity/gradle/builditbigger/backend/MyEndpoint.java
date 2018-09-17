@@ -31,12 +31,8 @@ public class MyEndpoint {
     @ApiMethod(name = "getJoke")
     public MyBean getJoke() {
         MyBean response = new MyBean();
-
-        //TODO remover esse comentários que chamam as piadas
         Jokes jokes = new Jokes();
-
-        //TODO tornar essa busca dinânimca
-        response.setData(jokes.getJoke(4));
+        response.setData(jokes.getJoke());
 
         return response;
     }

@@ -27,5 +27,23 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-api-1.0-sdk-1.9.56" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="converter-gson-2.4.0" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="gson-2.8.5" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="retrofit-2.4.0" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="okhttp-3.10.0" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="okio-1.14.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="appengine-api-1.0-sdk-1.9.56" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="converter-gson-2.4.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="gson-2.8.5" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="retrofit-2.4.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="okhttp-3.10.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="okio-1.14.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="appengine-api-1.0-sdk-1.9.56" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="converter-gson-2.4.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="gson-2.8.5" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="retrofit-2.4.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="okhttp-3.10.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="okio-1.14.0" level="project" />
   </component>
 </module>

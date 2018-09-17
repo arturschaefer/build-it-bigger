@@ -1,18 +1,10 @@
 package com.udacity.gradle.builditbigger;
 
-import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
-
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -42,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-        new EndpointsAsyncTask().execute(this);
+        EndpointsAsyncTask mEndpointsAsyncTask = new EndpointsAsyncTask();
+        mEndpointsAsyncTask.execute(this);
     }
 }

@@ -25,12 +25,29 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-task inicializeServerGCE(){
-    evaluationDependsOn ":backend"
+task taksTestServer {
+    dependsOn = ['startServer', 'runAndroid', 'shutdownServer']
+}
 
-    dependsOn ":backend:appengineRun"
-    dependsOn ":backend:appengineStop"
+task startServer {
+    dependsOn ':backend:appengineRun'
     doLast {
-        println "Make all tests in the gradle"
+        println "Start Server"
+    }
+}
+
+task runAndroid {
+    shouldRunAfter 'startServer'
+    dependsOn ':app:connectedCheck'
+    doLast {
+        println "Finalizing Test"
+    }
+}
+
+task shutdownServer {
+    shouldRunAfter 'runAndroid'
+    dependsOn ':backend:appengineStop'
+    doLast {
+        println "Shutdown Server"
     }
 }
