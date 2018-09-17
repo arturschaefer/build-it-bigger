@@ -1,6 +1,6 @@
 package com.udacity.gradle.builditbigger.backend;
 
-//import com.example.jokesjavalib.Jokes;
+import com.example.jokesjavalib.Jokes;
 import com.google.api.server.spi.config.Api;
 import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;
@@ -29,13 +29,14 @@ public class MyEndpoint {
     }
 
     @ApiMethod(name = "getJoke")
-    public MyBean getJoke(@Named("name") String name) {
+    public MyBean getJoke() {
         MyBean response = new MyBean();
+
         //TODO remover esse comentários que chamam as piadas
-//        Jokes jokes = new Jokes();
+        Jokes jokes = new Jokes();
 
         //TODO tornar essa busca dinânimca
-//        response.setData(jokes.getJoke(4));
+        response.setData(jokes.getJoke(4));
 
         return response;
     }

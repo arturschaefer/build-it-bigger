@@ -11,10 +11,10 @@ public class Jokes {
     }
 
     private Request mRequest;
-    private List<Joke> mJokeList;
+    private static List<Joke> mJokeList;
 
     //TODO get jokes from http://www.icndb.com/api/
-    public String getJoke(int quantity){
+    public static String getJoke(int quantity){
         mJokeList = new ArrayList<>();
         String url = "http://http://api.icndb.com/jokes/random/";
 
@@ -32,6 +32,7 @@ public class Jokes {
                 "Joke 05"
         );
 
-        return mJokeList.get(random.nextInt(mJokeList.size())).toString();
+//        return mJokeList.get(random.nextInt(mJokeList.size())).toString();
+        return staticStringList.get(random.nextInt(staticStringList.size()));
     }
 }

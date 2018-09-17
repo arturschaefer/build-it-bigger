@@ -24,3 +24,13 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+task inicializeServerGCE(){
+    evaluationDependsOn ":backend"
+
+    dependsOn ":backend:appengineRun"
+    dependsOn ":backend:appengineStop"
+    doLast {
+        println "Make all tests in the gradle"
+    }
+}

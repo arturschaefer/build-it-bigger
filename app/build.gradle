@@ -52,8 +52,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testImplementation 'junit:junit:4.12'
-    //    TODO dá erro ao importar
-    //    implementation project(':backend')
+
     implementation project(':jokesandroid')
     implementation project(':jokesJavaLib')
+    endpointsServer project(path: ':backend', configuration: 'endpoints')
 }
