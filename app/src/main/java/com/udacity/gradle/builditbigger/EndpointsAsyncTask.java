@@ -23,7 +23,6 @@ public class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
 
     @Override
     protected String doInBackground(Context... contexts) {
-        int quantity = 4;
         if(myApi == null){
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
